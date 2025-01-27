@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}
+Div {
+    background-color: rgb(216, 196, 144);
+}
+p   {
+    color:blue;
+}
+h1  {
+    background-color: white;
+}
+h3  {
+    color: red;
+}
+h2 {
+    background-color: gray;
+}
+.img-placeholder{
+    background-color: gray;
+    padding: 50;}
+.container {
+    margin-top: 100px;
+}

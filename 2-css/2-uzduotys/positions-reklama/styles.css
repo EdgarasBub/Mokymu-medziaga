@@ -1,0 +1,107 @@
+body {
+    width: 796px;
+    height: 567px;
+    background: #131417;
+    font-family: Inter;
+    position: relative;
+}
+
+.main-conteiner {
+    width: 600px;
+    height: 315px;
+    top: 106px;
+    left: 66px;
+    padding: 35px 72px 66px 72px;
+    border-radius: 12px;
+    background: #222225B2;
+    position: relative;
+}
+
+.p1 {
+    width: 531px;
+    height: 96px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.42px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.p2 {
+    width: 525px;
+    height: 52px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+button {
+    width: 144px;
+    height: 42px;
+    padding: 8px 16px 8px 16px;
+    gap: 8px;
+    border-radius: 12px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    border: 2px solid #F17965;
+    color: #F17965;
+    background-color: #222225B2;
+    position: absolute;
+
+}
+
+.button:hover {
+    background: #F79090;
+    color: #FFFFFF;
+}
+
+.megaphone {
+    width: 195px;
+    height: 220px;
+    transform: rotate(11deg);
+    position: absolute;
+    width: 195px;
+    top: -70.25px;
+    left: -55.41px;
+
+
+}
+
+.ellipse1 {
+    width: 62px;
+    height: 62px;
+    top: 369px;
+    left: 698px;
+    position: absolute;
+}
+
+.ellipse2 {
+    width: 114px;
+    height: 114px;
+    top: 392px;
+    left: 634px;
+    position: absolute;
+
+}
+
+.star {
+    width: 160px;
+    height: 167px;
+    top: 314px;
+    left: 608px;
+    position: absolute;
+}
+
+.megaphone1 {
+    width: 195px;
+    height: 195px;
+    top: -3.86px;
+    left: 49.01px;
+    position: absolute;
+}

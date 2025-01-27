@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+il {
+    display: inline;
+    color:aqua 
+}
+header {
+    background-color: black;
+    padding: 50px;
+}
+footer {
+    background-color: black;
+    padding: 100px;
+}
+p {
+    color: #FFFFFF;
+}
+main {
+    width: 100%;
+    background-image: url("../nuorodos-su-sarasu/nuotraukos/211de318-ebd0-48b8-8bf5-6fca8ddce201.jpg");
+    height: 600px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+h1 {
+   color: #FFFFFF;
+}

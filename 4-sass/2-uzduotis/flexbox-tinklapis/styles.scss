@@ -1,0 +1,87 @@
+@import "colors";
+
+.flex-conteiner {
+  display: flex;
+}
+
+#page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  Header {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $headerFooterBgcolor;
+
+    h1 {
+      padding: 15px;
+    }
+    nav {
+      ul {
+        li {
+          list-style: none;
+          margin-left: 10px;
+          padding: 5px;
+
+          a {
+            cursor: pointer;
+            color: $linkColor;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-col-1 {
+    background-color: $bannerBgColor;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+
+    p {
+      padding: 15px;
+    }
+  }
+  main {
+    display: flex;
+    background-color: rgb(248 248 248);
+    flex-wrap: wrap;
+
+    .straipsnis1,
+    .straipsnis2,
+    .straipsnis3,
+    .straipsnis4,
+    .straipsnis5,
+    .straipsnis6 {
+      display: flex;
+      margin: 20px;
+      width: 400px;
+      height: 400px;
+      border: black solid;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(222 184 135);
+    color: #ffffff;
+
+    .banner-col-2 {
+      background-color: $headerFooterBgcolor;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      p {
+        padding: 15px;
+      }
+    }
+  }
+}

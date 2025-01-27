@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter;
+}
+.slide{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.slide .number {
+    font-size: 128px;
+    font-weight: 400;
+}
+#slide-white {
+    background-color:#ffffff ;
+}
+
+#slide-green {
+    background-color:#51cb65 ;
+}
+
+#slide-violet {
+    background-color: #816Ef5;
+}
+
+#slide-red {
+    background-color: #EA7b7b;
+}
+
+#slide-grey {
+    background-color: #D9D9d9;
+}
+.menu {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+}
+.menu .arrow-up {
+    border-radius: 15px;
+    border: 1px black solid;
+    padding: 15px;
+}
+
+.menu nav ul {
+    display: flex;
+    padding-left: 10px;
+}
+.menu nav ul li {
+    list-style: none;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: 10px;
+    margin: 0 5px;
+}

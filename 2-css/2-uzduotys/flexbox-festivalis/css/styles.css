@@ -1,0 +1,600 @@
+#page-conteiner {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+main .page-block {
+    height: 100vh;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-right: 100px;
+
+}
+
+nav ul li {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+
+.top-nav {
+    width: 148px;
+    height: 26px;
+    top: 44px;
+    left: 245px;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration: none;
+    color: #222222;
+    padding-left: 148px;
+}
+
+nav ul li:hover {
+    color: #EB5757;
+    ;
+}
+
+header a {
+    text-decoration: none;
+    color: #222222;
+}
+
+header a:hover {
+    color: #EB5757;
+}
+
+.nav-top {
+    padding: 15px;
+    position: fixed;
+    border: 1px solid black;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 20px;
+}
+
+.nav-top a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.tittles {
+    width: 100%;
+}
+
+#primary-tittle {
+    background-image: url("../images/layout/festivalis-image.jpg");
+    background-size: cover;
+    width: 100%;
+
+}
+
+.background-image-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+}
+
+.Festivalio-div-p1 {
+    width: 100%;
+    height: 94px;
+    font-family: Raleway;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 93.92px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+
+}
+
+.Festivalio-div-p2 {
+    width: 100%;
+    height: 54px;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.Festivalio-div-button1 {
+    width: 232px;
+    height: 52px;
+    top: 599px;
+    left: 717px;
+    background: #EB5757;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border: none;
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.Festivalio-div-button1:hover {
+    background: #FFFFFF;
+    color: #EB5757;
+
+}
+
+.orange-article {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #EB5757;
+    color: #FFFFFF;
+    height: 100px;
+    margin-top: -20px;
+}
+
+.orange-article-p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 1200px;
+}
+
+.artist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.artists-p1 {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.18px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.artists-p2 {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration: none;
+}
+
+.artist-p {
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.7px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.artist-p2 {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+}
+
+.artist-div {
+    width: 238px;
+    height: 354px;
+    padding: 40px;
+}
+
+.artist-image {
+    width: 238px;
+    height: 238px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: 2px solid #FFFFFF;
+    border-radius: 200px;
+}
+
+.tomke {
+    background-image: url("../images/artist/tomke.jpg");
+    background-size: cover;
+}
+
+.upce {
+    background-image: url("../images/artist/upce.jpg");
+    background-size: cover;
+}
+
+.hendrei {
+    background-size: cover;
+    background-image: url("../images/artist/hendrei.jpg");
+}
+
+.polvek {
+    background-size: cover;
+    background-image: url("../images/artist/polvek.jpg");
+}
+
+.pugr {
+    background-size: cover;
+    background-image: url("../images/artist/pugr.jpg");
+}
+
+.lajs {
+    background-size: cover;
+    background-image: url("../images/artist/lajs.jpg");
+}
+
+.lawew {
+    background-size: cover;
+    background-image: url("../images/artist/lawews.jpg");
+}
+
+#gallery {
+    background-color: #EB57571A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 1300px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.galerija-p1 {
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.galerija-p2 {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+}
+
+.gg {
+    width: 248px;
+    height: 248px;
+    margin: 10px;
+}
+
+.g1 {
+    background-image: url("../images/layout/1.jpg");
+    background-size: cover;
+}
+
+.g1 {
+    background-image: url("../images/layout/1.jpg");
+    background-size: cover;
+}
+
+.g2 {
+    background-image: url("../images/layout/2.jpg");
+    background-size: cover;
+}
+
+.g3 {
+    background-image: url("../images/layout/3.jpg");
+    background-size: cover;
+}
+
+.g4 {
+    background-image: url("../images/layout/4.jpg");
+    background-size: cover;
+}
+
+.g5 {
+    background-image: url("../images/layout/5.jpg");
+    background-size: cover;
+}
+
+.g6 {
+    background-image: url("../images/layout/6.jpg");
+    background-size: cover;
+}
+
+.g7 {
+    background-image: url("../images/layout/7.jpg");
+    background-size: cover;
+}
+
+.g8 {
+    background-image: url("../images/layout/8.jpg");
+    background-size: cover;
+}
+
+.g9 {
+    background-image: url("../images/layout/9.jpg");
+    background-size: cover;
+}
+
+.g10 {
+    background-image: url("../images/layout/10.jpg");
+    background-size: cover;
+}
+
+.g11 {
+    background-image: url("../images/layout/11.jpg");
+    background-size: cover;
+}
+
+.g12 {
+    background-image: url("../images/layout/12.jpg");
+    background-size: cover;
+}
+
+.g13 {
+    background-image: url("../images/layout/13.jpg");
+    background-size: cover;
+}
+
+.g14 {
+    background-image: url("../images/layout/14.jpg");
+    background-size: cover;
+}
+
+.g15 {
+    background-image: url("../images/layout/15.jpg");
+    background-size: cover;
+}
+
+#tickets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 1300px;
+    background-color: #F8F8F8;
+
+}
+
+.tickets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.tickets-p1 {
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+}
+
+.tickets-p2 {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+}
+
+.tickets-box {
+    width: 400px;
+    height: 375px;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+
+.linija {
+    background-image: url("../icons/Line\ 1.svg");
+    width: 100%;
+    height: 2px;
+}
+
+.tickets-box-h1 {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.tickets-box-p1 {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 20px;
+}
+
+.kaina {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: inline-flex;
+    margin-left: 125px;
+}
+
+.eurai {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EB5757;
+
+}
+
+#location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 900px;
+    background: #EB57571A;
+
+}
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.location-h1 {
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.location-p1 {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+
+}
+
+.map {
+    background-image: url("../images/layout/zemelapis.png");
+    background-position: center;
+    background-size: cover;
+    width: 1175px;
+    height: 443px;
+
+}
+#CONTACTs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 900px;
+    background: #F8F8F8;
+
+
+}
+
+.CONTACTs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.CONTACTs-h1 {
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+#CONTACTs-box {
+    width: 392px;
+    height: 239px;
+
+}
+.CONTACTs-boxs {
+    width: 100%;
+    border: #Ffffff;
+    height: 30px;
+}

@@ -1,0 +1,53 @@
+body {
+    
+}
+header {
+    background-image: url("../images/e9f55fc7375b2d039dbfeda5c7065ac9.jpg");
+    width: 100%;
+    height: 822px;
+    margin: 0 auto;
+}
+
+.sticker {
+    width: 796px;
+    height: 62px;
+    top: 0px;
+    padding: 15px 510px 15px 133px;
+    background: linear-gradient(0deg, #AFBACB, #FFFFFF);
+    position: sticky;
+
+}
+
+.about {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.42px;
+    text-align: left;
+    width: 153px;
+    height: 32px;
+    top: 15px;
+    left: 133px;
+}
+
+.main-conteiner {}
+
+.article {
+    width: 464px;
+    height: 623px;
+    top: 491px;
+    left: 133px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0.42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0 auto;
+}
+article {
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+body {
+    background-image:url(../prisijungimo-forma/images/background.png);
+}
+.frame {
+    width:675px;
+    height:675px;
+    padding: 88px 260px 88px 260px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px 9px #00000029;
+    margin: 0 auto;
+    text-align: center;
+}
+.Thanks {
+    height: 24px;
+    font-family: Niramit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+}
+.login {
+    height: 38px;
+    gap: 0px;
+    font-family: Niramit;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+
+
+}
+.prisijungimo-forma{
+    height:272px;
+    gap: 16px;
+}
+h6 {
+    width: 49px;
+    height: 24px;
+    gap: 0px;
+    font-family: Niramit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+
+}
+button {
+    width:137px;
+    height:48px;
+    padding: 8px 45px ;
+    border-radius:30px;
+    background: #02B4E2;
+    font-family: Niramit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    border: none;
+    margin-right: 95px;
+    font-weight: 700;
+}
+.parastes {
+    height: 85px;
+    gap: 0px;
+    font-family: Niramit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+
+}
+.logo {
+    margin: 0 auto;
+    text-align: center;
+}
+.email {
+    width:324px;
+    height:56px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1.25px 0px 1.25px 1.25px;
+
+}
+.password {
+    width:324px;
+    height:56px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1.25px 0px 1.25px 1.25px;
+
+}
+.email-div {
+    width:324px;
+    height:96px;
+
+}
+.password-div {
+    height:96px;
+
+}
+button,.text2 {
+    font-family: niramit;
+}
+label {
+    width: 87px;
+    height: 24px;
+    font-family: Niramit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    
+}

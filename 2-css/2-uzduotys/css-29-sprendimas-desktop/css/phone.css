@@ -1,0 +1,110 @@
+@media screen and (max-width: 376px) {
+  .container {
+    min-width: unset;
+    background-color: antiquewhite;
+  }
+  nav .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav h3 {
+    width: 100%;
+    text-align: center;
+  }
+  nav .title {
+    padding-left: unset;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+  }
+  nav ul {
+    gap: 30px;
+    padding-right: unset;
+  }
+  header .welcome-img {
+    width: 100%;
+    clip-path: polygon();
+  }
+  header .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header .info {
+    width: 100%;
+    align-items: center;
+  }
+  header .info-part {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    justify-content: left;
+  }
+  header .info h1 {
+    line-height: 50px;
+    font-size: 50px;
+    padding-left: 20px;
+  }
+  header .buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  header .buttons {
+    width: 100%;
+    padding: 20px 20px;
+    max-width: 100%;
+    gap: 10px;
+  }
+  header .first,
+  .second {
+    width: 100%;
+    text-align: center;
+  }
+  header .buttons button {
+    text-align: center;
+  }
+  section .card {
+    width: calc((100% - 2 * 24px));
+  }
+  section .card .button-s {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  section .card button {
+    width: 100%;
+    padding: 10px 0px;
+    max-width: 100%;
+  }
+  section .container .card-s {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  section .card .price {
+    background-color: #ffffff;
+    padding: 5px 0px 5px 0px;
+  }
+  section .card p span {
+    font-size: 18px;
+  }
+  section .card p {
+    font-size: 18px;
+  }
+  section .card h4 {
+    font-size: 23px;
+  }
+  footer .container .info {
+    flex-wrap: wrap;
+  }
+  footer .brackets1 {
+    width: 100%;
+
+}
+footer .brackets2, footer .brackets3{
+    width: 100%;
+}
+footer .container .info {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+}

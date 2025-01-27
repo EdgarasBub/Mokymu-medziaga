@@ -1,0 +1,21 @@
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.black {
+    background-color: black;
+}
+.violet {
+    background-color: violet;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(4);
+    grid-template-columns: 50px;auto 50px
+}

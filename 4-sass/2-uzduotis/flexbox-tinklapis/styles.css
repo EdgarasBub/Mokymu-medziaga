@@ -1,0 +1,96 @@
+.flex-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#page-container Header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fee3c3;
+}
+#page-container Header h1 {
+  padding: 15px;
+}
+#page-container Header nav ul li {
+  list-style: none;
+  margin-left: 10px;
+  padding: 5px;
+}
+#page-container Header nav ul li a {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+#page-container .banner-col-1 {
+  background-color: rgb(138, 43, 226);
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#page-container .banner-col-1 p {
+  padding: 15px;
+}
+#page-container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#page-container main .straipsnis1,
+#page-container main .straipsnis2,
+#page-container main .straipsnis3,
+#page-container main .straipsnis4,
+#page-container main .straipsnis5,
+#page-container main .straipsnis6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+  border: black solid;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 10px;
+}
+#page-container footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgb(222, 184, 135);
+  color: #ffffff;
+}
+#page-container footer .banner-col-2 {
+  background-color: #fee3c3;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#page-container footer .banner-col-2 p {
+  padding: 15px;
+}

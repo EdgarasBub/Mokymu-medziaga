@@ -1,0 +1,202 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+/* General */
+* {
+  font-family: "roboto", sans-serif;
+}
+/* GENERAL */
+* {
+  font-family: "Roboto", sans-serif;
+}
+/* NAV */
+nav.navbar {
+  padding: 20px 0;
+}
+nav .navbar-brand {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #878b9b;
+}
+nav .navbar-nav .nav-item {
+  margin: 0 20px;
+}
+nav .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #404445;
+}
+nav .navbar-nav .nav-item:first-child {
+  margin-left: 0;
+}
+nav .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+nav .navbar-nav .nav-item .active,
+nav .navbar-nav .nav-item .nav-link:hover {
+  color: #43c45f;
+}
+/* header */
+.text-container {
+  background-image: url(../2-uzduotis/images/top-img.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  display: flex;
+  background-color: #626471;
+}
+
+header .container .col h1 {
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 82px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+header .container .col p {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #d5d7d8;
+  padding: 40px;
+}
+header .container .col button {
+  width: 191px;
+  height: 47px;
+  top: 568px;
+  left: 865px;
+  border-radius: 1px;
+  background: #43c45f;
+  border: none;
+  color: #ffffff;
+}
+/* MAIN */
+/* MAIN */
+
+main .container {
+    margin-top: 100px
+}
+
+main .container .row .p1 {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: #404445;
+ padding: 5px;
+}
+
+main .container .row .p2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.35px;
+    text-align: left;
+    color: #5F6B81;
+    padding: 5px;
+}
+main .container .row .col-6 .row .col-6 {
+    padding: 20px;    
+}
+
+.image-container {
+    background-image: url(../2-uzduotis/images/kolegps-img.png);
+    background-size: cover;
+    width: 67%;
+    height: 240px;
+}

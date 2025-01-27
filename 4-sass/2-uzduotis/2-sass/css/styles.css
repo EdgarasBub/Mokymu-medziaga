@@ -1,0 +1,232 @@
+#page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+Header .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+  gap: 20px;
+  padding-right: 20px;
+}
+Header .navbar-nav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 193px;
+  height: 40px;
+  left: 383px;
+  padding: 11px 16px 11px 16px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: rgb(32, 173, 150);
+}
+Header .navbar-nav button a {
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+Header .navbar-nav li a {
+  font-family: Kumbh Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(74, 85, 108);
+}
+Header .header-50 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+Header .header-50 .content {
+  width: 50%;
+  padding: 80px;
+}
+Header .header-50 .content .text-container p {
+  font-family: Kumbh Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgb(74, 85, 108);
+  padding-bottom: 50px;
+  width: 79%;
+}
+Header .header-50 .content .text-container h1 {
+  font-family: Kumbh Sans;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgb(51, 52, 97);
+  padding-bottom: 50px;
+}
+Header .header-50 .content .email-container {
+  width: 46%;
+}
+Header .header-50 .content .email-container p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgb(102, 112, 133);
+}
+Header .header-50 .content .email-container span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(102, 112, 133);
+}
+Header .header-50 .content .email-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  left: 383px;
+  padding: 11px 16px 11px 16px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: rgb(32, 173, 150);
+}
+Header .header-50 .content .email-container button a {
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+Header .header-50 .img-holder {
+  width: 50%;
+  background-color: rgb(250, 248, 246);
+  padding: 70px 0;
+}
+Header .header-50 .img-holder span {
+  position: absolute;
+}
+Header .header-50 .img-holder p {
+  position: absolute;
+  margin: -6px -189px;
+  color: rgb(255, 255, 255);
+}
+Header .header-50 .img-holder .header-img-1 {
+  width: 100%;
+}
+Header .header-50 .img-holder .header-img-2 {
+  position: absolute;
+  margin: -40px -200px;
+}
+
+.no1 {
+  height: 100vh;
+}
+.no1 .text-container h2 {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(74, 85, 108);
+}
+.no1 .text-container h1 {
+  font-family: Kumbh Sans;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgb(51, 52, 97);
+}
+.no1 .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.no1 .button-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  left: 383px;
+  padding: 11px 16px 11px 16px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: rgb(32, 173, 150);
+}
+.no1 .button-container button a {
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+
+.colorg {
+  background-color: rgb(250, 248, 246);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.colorg .container {
+  width: 50%;
+  padding: 75px;
+}

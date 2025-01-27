@@ -1,0 +1,30 @@
+.grid-conteiner {
+    display: grid;
+    grid-template:repeat(5,150px) / repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h h h"
+    "s c c c s2"
+    "f f f f f";
+}
+.header {
+    background-color: aquamarine;
+    grid-area: h;
+}
+.sidebar {
+    background-color: antiquewhite;
+    grid-area: s;
+}
+.sidebar-2 {
+    background-color: antiquewhite;
+    grid-area: s2;
+}
+.content {
+    background-color: blue;
+    grid-area: c;
+}
+
+.footer {
+    background-color: antiquewhite;
+    grid-area: f;
+}

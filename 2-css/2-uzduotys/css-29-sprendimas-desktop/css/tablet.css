@@ -1,0 +1,86 @@
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+
+    nav .title {
+        padding-left: 5%;
+    }
+    nav ul {
+        gap:10px;
+        padding-right: 5px;
+    }
+    header .welcome-img {
+        width: 100%;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header .info {
+        width: 100%;
+        align-items: center;
+    }
+    header .info-part {
+        width: 100%;
+        padding: 50px 0 50px 0 ;
+        justify-content: center;
+    }
+    section .container .comment {
+        padding:  0 5%;
+    }
+    header h1 {
+        font-size: 60px;
+        padding-bottom: 0px;
+    }
+    header p {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    section .card {
+        width: calc((100% - 2* 24px) / 2);
+        background-color: none;
+    }
+    section .card .price  {
+        background-color: #ffffff;
+        padding: 5px 0px 5px 0px;
+    }
+    section .card p span {
+        font-size: 18px;
+    }
+    section .card p {
+        font-size: 18px;
+
+    }
+    section .card h4 {
+        font-size: 23px;
+    }
+    section .card .button-s {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    section .card button {
+        width: 100%;
+        padding: 10px 0px;
+        max-width: 100%;
+    }
+    section .container .title h3 {
+        font-size: 40px;
+    }
+    section .container .card-s {
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+    footer .container .info {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    footer .info {
+        flex-wrap: wrap;
+    }
+    footer .brackets1 {
+        width: 100%;
+        padding: 45px 0px;
+    }
+    footer .brackets2, footer .brackets3{
+        width: 45%;
+    }
+}

@@ -1,0 +1,17 @@
+
+$font-stack:helvetica, sans-serif;
+$primary-color: #333;
+$colorGreen:green;
+$divclassname: 'sass-div' ;
+$cssrulename: margin;
+
+div.#{$divclassname} {
+    color: red;
+    #{cssRuleName}:12px 
+}
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    $colorGreen:green; //lokalus//
+
+}

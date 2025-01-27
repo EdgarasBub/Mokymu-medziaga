@@ -1,0 +1,18 @@
+#norimas-id a, #norimas-id p {
+    font-size: 3em;
+}
+#norimas-id mark:hover {
+    position: relative;
+    bottom: 10px;
+}
+#norimas-id a:hover {
+    position: relative;
+    left:10px;
+}
+nav {
+    background-color: aquamarine;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

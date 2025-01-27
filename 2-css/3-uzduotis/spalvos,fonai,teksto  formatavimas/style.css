@@ -1,0 +1,58 @@
+body {
+    background-color: #f2e9d8;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    background-color: rgba(0,0,0,0.2);
+    -webkit-text-stroke-width: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+
+}
+h2 {
+    background-color: rgba(0,0,0,0.2);
+    -webkit-text-stroke-width: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+
+}
+h3 {
+    background-color: rgba(0,0,0,0.2);
+    -webkit-text-stroke-width: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+
+}
+.table {
+    background-image: url("../../../1-html/assets/dangus.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+td {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.langeliai {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+#pirmas-paragrafas {
+    color: gray;
+    font-size: 1.5em;
+    font-display: rigth;
+    font-family:Verdana, Geneva, sans-serif;
+    font-style: italic;
+}
+a{
+    color: #ed0a3f;
+    text-size-adjust: 300;
+    text-decoration: none;
+}
+a:hover {
+    color: #2d383a;
+}
+p {
+    font-family: justify;
+}

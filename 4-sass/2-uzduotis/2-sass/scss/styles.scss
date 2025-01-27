@@ -1,0 +1,207 @@
+@import "colors";
+
+#page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+Header {
+  .navbar-nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 20px;
+    padding-right: 20px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 193px;
+      height: 40px;
+      left: 383px;
+      padding: 11px 16px 11px 16px;
+      gap: 10px;
+      border-radius: 4px;
+      background-color: $iconsBluecl;
+
+      a {
+        font-family: Kumbh Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18.2px;
+        text-align: right;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $buttonWhite;
+      }
+    }
+    li {
+      a {
+        font-family: Kumbh Sans;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-align: right;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $NavAcl;
+      }
+    }
+  }
+  .header-50 {
+    width: 100%;
+    display: flex;
+
+    .content {
+      width: 50%;
+      padding: 80px;
+      .text-container p {
+        font-family: Kumbh Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: $NavAcl;
+        padding-bottom: 50px;
+        width: 79%;
+      }
+      .text-container h1 {
+        font-family: Kumbh Sans;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 58px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: $h1header;
+        padding-bottom: 50px;
+      }
+      .email-container {
+        width: 46%;
+        p {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: $pheader;
+        }
+        span {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          color: $pheader;
+        }
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 40px;
+          left: 383px;
+          padding: 11px 16px 11px 16px;
+          gap: 10px;
+          border-radius: 4px;
+          background-color: $iconsBluecl;
+
+          a {
+            font-family: Kumbh Sans;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18.2px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: $buttonWhite;
+          }
+        }
+      }
+    }
+    .img-holder {
+      width: 50%;
+      background-color: rgba(250, 248, 246, 1);
+      padding: 70px 0;
+      span {
+        position: absolute;
+      }
+      p {
+        position: absolute;
+        margin: -6px -189px;
+        color: $buttonWhite;
+      }
+      .header-img-1 {
+        width: 100%;
+      }
+      .header-img-2 {
+        position: absolute;
+        margin: -40px -200px;
+      }
+    }
+  }
+}
+
+.no1 {
+  height: 100vh;
+  .text-container {
+    h2 {
+      font-family: Kumbh Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: $NavAcl;
+    }
+    h1 {
+      font-family: Kumbh Sans;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: $h1header;
+    }
+  }
+  .button-container {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-content: center;
+    flex-wrap: wrap;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 40px;
+      left: 383px;
+      padding: 11px 16px 11px 16px;
+      gap: 10px;
+      border-radius: 4px;
+      background-color: $iconsBluecl;
+      a {
+        font-family: Kumbh Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18.2px;
+        text-align: right;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $buttonWhite;
+      }
+    }
+  }
+}
+
+.colorg {
+  background-color: $bodys;
+  width: 100%;
+  display: flex;
+  .container{
+    width: 50%;
+    padding: 75px;
+  }
+}

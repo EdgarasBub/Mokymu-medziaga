@@ -1,0 +1,27 @@
+.lenta1 {
+    background-image: url("../../1-html/assets/dykuma.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lenta2 {
+    background-image: url("../../1-html/assets/dangus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lenta3 {
+    background-image: url("../../1-html/assets/ledas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paragrafas1 {
+    background-color: rgb(247, 245, 125);
+}
+.paragrafas2 {
+    background-color: rgb(159, 214, 193);
+}
+.paragrafas3 {
+    background-color: rgb(121, 163, 196);
+}
+.uzpildas {
+    background-color: antiquewhite;
+}

@@ -1,0 +1,556 @@
+body {
+  background-color: black;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px;
+  }
+}
+
+#page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: black;
+}
+
+header #navbarNavAltMarkup {
+  justify-content: center;
+}
+
+header .navbar {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+}
+header .navbar-nav {
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-left: -165px;
+}
+
+header .nav-link {
+  color: grey;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+header .nav-link:hover {
+  color: white;
+  background-color: rgb(75, 75, 75);
+  border-radius: 10px;
+  transition-delay: 0.4s;
+}
+
+header .header-button-container {
+  display: inline-flex;
+  justify-content: end;
+}
+
+header .container .col {
+  padding: 0px;
+}
+header .header-mid-img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+header .sub-container {
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  padding-top: 135px;
+  z-index: 100;
+}
+
+header .sub-container-text {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .sub-container-text h1 {
+  font-family: Manrope;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+header .sub-container-text p {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #999999;
+  width: 86%;
+  margin-bottom: 50px;
+}
+header .sub-container button {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  width: 209px;
+  height: 52px;
+  padding: 14px 24px 14px 24px;
+  gap: 4px;
+  border-radius: 8px;
+  background-color: #e50000;
+  color: #ffffff;
+  display: flex;
+}
+.grid1 {
+  opacity: 25%;
+}
+.grid2 {
+  opacity: 60%;
+}
+.grid3 {
+  opacity: 50%;
+}
+.grid4 {
+  opacity: 15%;
+}
+.grid5 {
+  opacity: 35%;
+}
+/* SECTION - MOVIES & SHOWS  */
+.movies-shows {
+  padding-top: 200px;
+}
+
+.movies-shows .text-container h1 {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+}
+.movies-shows .text-container p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #999999;
+}
+
+.movies-shows .sub-container .card {
+  background: #1a1a1a;
+  border: 1px solid #262626;
+  padding: 15px 10px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.movies-shows .Image-Container {
+  justify-content: center;
+}
+
+.movies-shows .sub-container .card Img {
+  background-size: auto;
+  width: 40%;
+  padding: 0;
+}
+.movies-shows .sub-container .card-text {
+  padding-right: 0px;
+  width: 100%;
+  position: absolute;
+  padding-top: 267px;
+}
+
+.movies-shows .sub-container .card p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  width: 50%;
+}
+
+.movies-shows .sub-container span {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
+/* PLATFORMs */
+
+.platforms .text-container h1 {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+}
+.platforms .text-container p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #999999;
+  width: 80%;
+}
+
+/* PLATFOMR CARDS */
+
+.platforms .card {
+  background: linear-gradient(0deg, #0f0f0f, #0f0f0f),
+    linear-gradient(
+      221.52deg,
+      rgba(229, 0, 0, 0.5) -208.03%,
+      rgba(229, 0, 0, 0) 41.32%
+    );
+}
+
+.platforms .card .container p {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #ffffff;
+  width: 40%;
+  align-items: center;
+  display: flex;
+}
+.platforms .card p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #999999;
+}
+
+.platforms .card .span {
+  width: 20%;
+}
+.platforms .card .d-flex {
+  gap: 15px;
+}
+
+/*  */
+/* FAQ QUESTIONS */
+/*  */
+
+.FAQ-questions .text-container h1 {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  color: #ffffff;
+  width: 80%;
+}
+.FAQ-questions .text-container p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #999999;
+  display: flex;
+  align-items: end;
+  width: 90%;
+}
+.FAQ-questions .container .text-container button {
+  width: 140px;
+  height: 49px;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+  border-radius: 6px;
+  background: #e50000;
+  /* button text */
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* faq-questions  */
+/* acordion */
+
+.FAQ-questions .accordion-item button {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #ffffff;
+  gap: 10px;
+}
+.FAQ-questions .accordion p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #999999;
+  padding-left: 8%;
+  width: 98%;
+}
+.FAQ-questions .accordion {
+  --bs-accordion-bg: black;
+  --bs-accordion-border-color: black;
+}
+.accordion-button:not(.collapsed) {
+  background-color: black;
+}
+.line {
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(229, 0, 0, 0) 0%,
+    #e50000 16.67%,
+    rgba(229, 0, 0, 0) 100%
+  );
+}
+
+/*  */
+/* subriction */
+/*  */
+
+.Subscription .text-container h1 {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  width: 100%;
+}
+.Subscription .text-container p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+  width: 58%;
+}
+.Subscription .text-container button {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+  /* button  */
+  width: 94px;
+  height: 45px;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 6px;
+  opacity: 0px;
+  background: rgba(31, 31, 31, 1);
+}
+.Subscription .text-container button:hover {
+  background-color: black;
+  color: rgba(153, 153, 153, 1);
+  border: black;
+}
+.Subscription .text-container .button-container {
+  display: flex;
+  width: 42%;
+  justify-content: end;
+}
+/*  */
+/* subcribtion item-container */
+/*  */
+.Subscription .items-container .card {
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+}
+
+.Subscription .items-container h1 {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  padding: 5px;
+  width: 100%;
+}
+.Subscription .items-container p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+  padding: 5px;
+}
+.Subscription .items-container .text-container2 p {
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #ffffff;
+}
+.Subscription .items-container .text-container2 span {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+  display: flex;
+  align-self: end;
+}
+.Subscription .items-container .text-container {
+  padding-left: 3%;
+  padding-top: 3%;
+}
+.Subscription .items-container .text-container2 {
+  padding: 30px 0px;
+  padding-left: 3%;
+}
+
+.Subscription .bt1 {
+  width: 45%;
+  height: 100%;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px;
+  background: rgba(20, 20, 20, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.Subscription .bt2 {
+  width: 45%;
+  height: 100%;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+  border-radius: 6px;
+  background: rgba(229, 0, 0, 1);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+/*  */
+/* free trail */
+/*  */
+.free-trial .container {
+  background-image: url(../img/Background-Images.png);
+  background-size: cover;
+  width: 100%;
+  height: 210px;
+  display: flex;
+  align-items: center;
+}
+.free-trial h1 {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+}
+.free-trial p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  display: flex;
+  align-items: end;
+  width: 85%;
+  color: rgba(153, 153, 153, 1);
+}
+
+.free-trial button {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  width: 149px;
+  height: 49px;
+  padding: 14px 20px 14px 20px;
+  border-radius: 8px;
+  background: rgba(229, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+/*  */
+/* footer */
+/*  */
+
+footer h1 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 10px;
+}
+footer .link-container a {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+/*  */
+/* footer botom */
+/*  */
+footer .container p {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+  width: 50%;
+}
+footer .container .button-container a {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+  text-decoration: none;
+
+}
+footer .button-container {
+  width: 50%;
+  place-content: flex-end
+}

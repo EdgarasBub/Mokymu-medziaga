@@ -1,0 +1,534 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.display-propertie {
+  display: flex;
+}
+
+body {
+  background-color: grey;
+}
+
+/*Headerio sekcija*/
+
+h2 {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+header {
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 130px;
+}
+
+li {
+  padding: 0 20px;
+  list-style: none;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.start-button {
+  color: #eb5757;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Titulinio sekcija*/
+
+#title-container {
+  background-image: url('../img/festivalis-zmones.png');
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-title {
+  font-family: Raleway;
+  color: white;
+  font-weight: 700;
+  font-size: 70px;
+  margin: 20px auto;
+}
+
+.title-text {
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  margin: 20px auto;
+  text-shadow: 0 2px 2px #00000040;
+}
+
+.button-container {
+  margin: 30px auto;
+  gap: 20px;
+}
+
+.buy-button {
+  background-color: #eb5757;
+  width: 210px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-family: Open Sans;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.buy-button:hover {
+  background-color: #b84848;
+  transition-duration: 0.1s;
+}
+
+.buy-button:active {
+  background-color: #c84a4a;
+  transition-duration: 0.1s;
+}
+
+.review-button {
+  background-color: white;
+  width: 210px;
+  height: 50px;
+  border: none;
+  color: #eb5757;
+  font-family: Open Sans;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.review-button:hover {
+  background-color: rgb(210, 210, 210);
+  transition-duration: 0.05s;
+}
+
+.review-button:active {
+  background-color: rgb(228, 228, 228);
+  transition-duration: 0.05s;
+}
+
+.title-footer-text {
+  font-family: Open Sans;
+  color: white;
+  background-color: #eb5757;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  padding: 0 270px;
+}
+
+/*Atlikeju sekcija*/
+
+#artist-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.artist-title {
+  font-family: Raleway;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.line-container {
+  margin: 0 auto;
+  padding: 0;
+  height: 4px;
+}
+
+.artist-header-text {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 15px;
+  padding: 10px 0 30px 0;
+}
+
+.artist-photo-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  width: 70%;
+  height: 500px;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.solo-artist-block {
+  text-align: center;
+  margin: 0 10px;
+  padding: 0;
+  width: 190px;
+}
+
+.artist-photo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.artist-photo-name {
+  margin: 0;
+  font-family: Raleway;
+  padding-bottom: 5px;
+}
+
+.artist-photo-text {
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 12px;
+}
+
+/*Galerijos sekcija*/
+
+#gallery-container {
+  background-color: #f7e9e9;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-title {
+  font-family: Raleway;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.gallery-text {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 15px;
+  padding: 10px 0 40px 0;
+}
+
+.gallery-photo-container {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo-block {
+  width: 150px;
+  height: 150px;
+}
+
+.photo-block:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.photo-block:active{
+  transform: scale(0.9);
+  transition-duration: 0.1s;
+}
+
+/*Bilietu sekcija*/
+
+#ticket-container {
+  background-color: #f8f8f8;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ticket-title {
+  font-family: Raleway;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.line-container {
+  margin: 0 auto;
+  padding: 0;
+  height: 4px;
+}
+
+.ticket-text {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 15px;
+  padding: 10px 0 80px 0;
+}
+
+.ticket-selection-container {
+  gap: 50px;
+}
+
+.x-day-ticket-container {
+  background-color: #ffffff;
+  border: 1px #0000001a solid;
+  width: 350px;
+  height: 300px;
+  box-shadow: 0px 0px 40px 0px #0000000d;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.ticket-box-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 20px;
+  margin: 0;
+}
+
+.line-2 {
+  width: 100%;
+}
+
+.ticket-box-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 20px 18%;
+}
+
+.ticket-box-price-container {
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-box-price-text {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.ticket-box-price-value {
+  font-family: Raleway;
+  color: #eb5757;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.ticket-box-button {
+  background-color: #eb5757;
+  color: white;
+  border: none;
+  width: 170px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: Open Sans;
+  font-size: 12px;
+}
+
+.ticket-box-button:hover {
+  background-color: #b84848;
+  transition-duration: 0.1s;
+}
+
+.ticket-box-button:active {
+  background-color: #c84a4a;
+  transition-duration: 0.1s;
+}
+
+/*Žemėlapio sekcija*/
+
+#maps-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7e9e9;
+  height: 100vh;
+}
+
+.maps-title {
+  font-family: Raleway;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.line-container {
+  margin: 0 auto;
+  padding: 0;
+  height: 4px;
+}
+
+.maps-text {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 15px;
+  padding: 10px 0 60px 0;
+}
+
+/*Susisiekti sekcija*/
+
+#get-in-touch-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  height: 90vh;
+}
+
+.get-in-touch-title {
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  font-weight: 700;
+}
+
+.line-container-input {
+  padding: 0 0 50px 0;
+}
+
+.input-container {
+  flex-direction: column;
+}
+
+.input-label {
+  font-family: Open Sans;
+  padding: 10px 0;
+}
+
+.input-box {
+  border: none;
+  width: 300px;
+  height: 40px;
+}
+
+.get-in-touch-button {
+  background-color: #eb5757;
+  color: white;
+  border: none;
+  width: 170px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-family: Open Sans;
+  font-size: 12px;
+}
+
+.get-in-touch-button:hover {
+  background-color: #b84848;
+  transition-duration: 0.1s;
+}
+
+.get-in-touch-button:active {
+  background-color: #c84a4a;
+  transition-duration: 0.1s;
+}
+
+/*Footer sekcija*/
+
+.footer-container {
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #ffffff;
+  font-family: Open Sans;
+  font-size: 15px;
+}
+
+.footer-text{
+  padding-left: 30px;
+}
+
+.footer-list{
+  padding-right: 10px;
+}
+
+
+/*To the top button sekcija*/
+
+.to-the-top-container {
+  background-color: #ff4c4c;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  right: 40px;
+  bottom: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Open Sans;
+  color: white;
+  border: 1px grey solid;
+  opacity: 0.6;
+  
+}
+
+.to-the-top-container:hover {
+  background-color: #b84848;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.to-the-top-container:active{
+  background-color: pink;
+  transform: scale(0.9);
+  transition-duration: 0.1s;
+}
+
+
+
+
+/*Linijos figūros sekcija*/
+
+.line-container-div{
+  background-color: #eb5757;
+  height: 5px;
+  width: 35px;
+  margin: 10px 0;
+}
+

@@ -1,0 +1,59 @@
+main {
+    background: #D4F1E6;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.flex-container {
+    display: flex;
+}
+main h1 {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 86px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+main .img-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kampas {
+    background-image: url("images/kampinis\ langas.jpg");
+    background-size: cover;
+    border-radius: 63px;
+    width: 30%;
+    height: 456px;
+
+}
+.zalias-kalnas {
+    background-image: url("images/zalias-kalnas.jpg");
+    background-size: cover;
+    border-radius: 63px;
+    width: 50%;
+    height: 456px;
+    
+}
+.laiptai-durys {
+    background-image: url("images/laiptai-durys.jpg");
+    background-size: cover;
+    border-radius: 63px;
+    width: 50%;
+    height: 456px;
+
+    
+}
+.ezeras {
+    background-image: url("images/ezeras.jpg");
+    background-size: cover;
+    border-radius: 63px;
+    width: 30%;
+    height: 456px;
+
+    
+}

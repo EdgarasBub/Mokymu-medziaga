@@ -1,0 +1,161 @@
+
+header {
+    background-image: url("../artejantys-skrydziai/images/airport.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 1920px 516px;
+}
+
+
+h1 {
+    width: 835px;
+    height: 234px;
+    top: 140px;
+    left: 196px;
+    font-family: Roboto;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 234.38px;
+    text-align: left;
+    position: absolute;
+    color: #FFFFFF;
+    text-shadow: 0px 5px #0000005E;
+
+}
+.main-conteiner {
+    position: relative;
+}
+.kelias {
+    width: 100%;
+    height: 226px;
+    border-radius: 15px;
+
+}
+.cards-list {
+    margin: 0 auto;
+    width: 644px;
+}
+.card-1 {
+    background-color: #E0F0FC;
+    width:100%;
+    height:525px;
+    padding: 24px 24px 36px 24px;
+    gap: 32px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+.card-2 {
+    background-color:#F4E7FD;
+    width:100%;
+    height:525px;
+    padding: 24px 24px 36px 24px;
+    gap: 32px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+.card-3 {
+    background-color:#E4FCE0;
+    width:100%;
+    height:525px;
+    padding: 24px 24px 36px 24px;
+    gap: 32px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+.frame {
+    width: 294px;
+    height: 121px;
+    gap: 8px;
+}
+.data {
+    width: 165px;
+    height: 56px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56.25px;
+    text-align: left;
+}
+.kelione {
+    width: 210px;
+    height: 28px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+
+}
+.rezervacija {
+    width: 294px;
+    height: 21px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    color: #807D7D;
+
+}
+button {
+    background: linear-gradient(90deg, #073590 21.43%, #3D7BF5 83.33%);
+    width:234px;
+    height: 54px;
+    padding: 16px 32px 16px 32px;
+    gap: 8px;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.hey {
+    width:1564px;
+    height:114px;
+}
+
+.hey-p {
+    width: 905px;
+    height: 75px;
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: left;
+    color: #073590;
+
+}
+.manage {
+    width: 371px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color:  #807D7D;
+
+}
+.blue-conteiner {
+    width:1564px;
+    height:54px;
+    padding: 16px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    background-color: #91D5FF;
+}
+.booking {
+    width: 1504px;
+    height: 22px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #000000D9;
+
+}

@@ -1,0 +1,145 @@
+#darbas {
+    max-width: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-conteiner {
+    display: flex;
+}
+
+header {
+    background: #000000;
+    width: 1440px;
+    height: 88px;
+    padding: 16px 160px 16px 160px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+header nav {
+    width: 100%;
+}
+
+header ul li {
+    list-style: none;
+    width: 20%;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 23.16px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+header ul {
+    padding: 20px 0;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.antrastes1 {
+    width: 340px;
+    height: 78px;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+}
+
+.main-conteiner {
+    background-image: url("../img/ledu-background.png");
+    background-size: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat;
+    background-size:  100%;
+    width: 1760px;
+}
+
+.page-conteiner {
+    width: 1120px;
+    height: 728px;
+    top: 169px;
+    left: 160px;
+    background: #000000;
+    position: absolute;
+
+}
+
+.ledu-conteiner {
+    width: 293px;
+    height: 440px;
+    border: white solid;
+}
+
+.ledai1 {
+    width: 127px;
+    height: 127px;
+    top: 46px;
+    left: 83px;
+    background-image: url("../img/ledai.jpg");
+    background-size: cover;
+    border-radius: 70px;
+
+}
+
+.ledai2 {
+    width: 127px;
+    height: 127px;
+    top: 46px;
+    left: 83px;
+    background-image: url("../img/balti-ledai.jpg");
+    border-radius: 70px;
+    background-size: cover;
+}
+
+.ledai3 {
+    width: 127px;
+    height: 127px;
+    top: 46px;
+    left: 83px;
+    background-image: url("../img/rudi-ledai.png");
+    background-size: cover;
+    border-radius: 70px;
+
+}
+
+button {
+    width: 163px;
+    height: 52px;
+    top: 356px;
+    left: 67px;
+    padding: 1px 0px 0px 0px;
+    color: #9661E8;
+    background: #000000;
+    border: 2px solid #000000;
+
+}
+
+button:hover {
+    border: 2px solid #9661E8;
+    width: 161px;
+    height: 50px;
+    padding: 16px 20px 16px 20px;
+    opacity: 0.5;
+}
