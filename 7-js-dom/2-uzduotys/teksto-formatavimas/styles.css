@@ -1,0 +1,28 @@
+.filtrai {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filtrai .blokas {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.filtrai .teksto-stilius button.aktyvus {
+    background-color: lightblue;
+}
+
+.filtrai .teksto-stilius button {
+    background-color: silver;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.2s all;
+}
+.filtrai .teksto-stilius button:hover {
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.2s all;
+}

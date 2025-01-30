@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepykla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header class="block-wrapper">
+        <h1>Kepykla</h1>
+    </header>
+    
+    <div class="info-wrapper block-wrapper">
+        <h2>Pradine info</h2>
+        <div class="input-wrapper">
+            <label for="employees-count">Darbuotoju skaicius </label>
+            <input id="employees-count" type="number" min="0" step="1"  value="0">
+    </div>
+        <div class="input-wrapper">
+            <label for="employees-makes-per-day">Vienas darbuotojas duonos kepalu per diena </label>
+            <input id="employees-makes-per-day" type="number" min="0" step="1"  value="0">
+</div>
+        <div class="input-wrapper">
+            <label for="day-reservations">Kiek uzsakymu turi buti igyvendinta </label>
+            <input id="day-reservations" type="number" min="0" step="1"  value="0"> 
+</div>
+<button id="calculate">Skaiciuoti</button>
+</div>
+
+    <div class="calculation-wrapper block-wrapper">
+        <h2>Skaiciavimai</h2>
+        <div id="results">
+            <p>Kol kas nieko nera</p>
+        </div>
+    </div>
+
+    <script src="sripts.js"></script>
+</body>
+</html>
