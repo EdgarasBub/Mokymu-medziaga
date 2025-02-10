@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="pirmas">
+        <h1 id="pirma-antraste">Pirma antraste</h1>
+        <p id="pirmas-paragrafas">Pirmas paragrafas</p>
+    </div>
+
+    <div id="antras">
+        <p id="paragrafo-tekstas">
+            si tekstukas yr konsolei
+        </p>
+    </div>
+
+    <div id="trecias">
+        <p>Turime matytu koncei paragrafa arba tik teksta</p>
+    </div>
+
+    <div id="ketvirtas">
+        <button onclick="document.getElementById('paragrafas-pakeitimui').innerHTML = 'Pakeistas paragrafo tektas'">
+            Pakeisti teksta
+        </button>
+        <p id = "paragrafas-pakeitimui">Nepakeistas paragrafo tekstas </p>
+    </div>
+
+    <div id="penktas">
+        <button onclick="document.getElementById('paragrafas-5').style.fontSize = '35px'">
+            Pakeisti dydi
+        </button>
+        <button onclick="document.getElementById('paragrafas-5').style.color = 'red'">
+            Pakeisti spalva
+        </button>
+        <p id="paragrafas-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsam.
+        </p>
+    </div>
+
+    <div id="sestas">
+        <p>
+            <img src="img/image1.png" alt="lempute" id="lempute">
+        </p>
+
+        <button onclick="document.getElementById('lempute').src = 'img/image1.png'">
+            Ijungti lempute
+        </button>
+
+        <button onclick="document.getElementById('lempute').src = 'img/image5.png'">
+            Isjungti lempute
+        </button>
+    </div>
+
+    <div id="septintas">
+        <button onclick="pakeisti()">pakeisti teksta</button>
+        <p id="septinto-tekstas">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, consectetur.
+        </p>
+    </div>
+
+    <div id="astuntas">
+        <button onclick="pakeisti2('astunto-tekstas', 'vienas du trys')">Pakeisti teksta 1</button>
+        <button onclick="pakeisti2('astunto-tekstas', 'batai kupranugaris meska')">Pakeisti teksta 2</button>
+        <button onclick="pakeisti2('astunto-tekstas', 'stalas kede medis')">Pakeisti teksta 3</button>
+        <button onclick="pakeisti2('astunto-tekstas', 'berzas obelus gyvate')">Pakeisti teksta 4</button>
+        <p id="astunto-tekstas">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, eligendi?
+        </p>
+    </div>
+
+    <div id="devintas">
+        <button onclick="pakeisti3('devinto-tekstas', 'vienas du trys')">Pakeisti teksta 1</button>
+        <button onclick="pakeisti3('devinto-tekstas', 'mano kambarys')">Pakeisti teksta 2</button>
+        <button onclick="pakeisti3('devinto-tekstas', 'liudi be taves')">Pakeisti teksta 3</button>
+        <button onclick="pakeisti3('devinto-tekstas', 'trys du vienas')">Pakeisti teksta 4</button>
+        <br>
+
+        <button onclick="kitaSpalva('devinto-tekstas', 'black')">Juodai</button>
+        <button onclick="kitaSpalva('devinto-tekstas', 'red')">Raudona</button>
+        <button onclick="kitaSpalva('devinto-tekstas', 'green')">Zalia</button>
+        <br>
+
+        <p id="devinto-tekstas">
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, illum!
+
+        </p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

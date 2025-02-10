@@ -1,0 +1,65 @@
+body {
+    max-width: 1440px;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+.info-wrapper{
+    margin: 20px auto;
+    background-color: #ffffff;
+    max-width: 600px;
+    padding: 25px;
+}
+.info-wrapper h1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.info-wrapper .korteles {
+    display: flex;
+    gap: 20px;
+    
+}
+.info-wrapper .korteles .vidiniai-div {
+    cursor: pointer;
+    width: 150px;
+    border: 1px solid #E6E6E6;
+    position: relative;
+}
+
+.info-wrapper .korteles .vidiniai-div .text {
+    padding: 0px 15px;
+}
+.info-wrapper .korteles .vidiniai-div img.active {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.info-wrapper .korteles .vidiniai-div img.hide {
+    display: none;
+}
+
+.porcijos input[type='range'] {
+    cursor:pointer;
+    appearance:none;
+    background: transparent;
+    width: 216px;
+}
+
+.porcijos input[type=range]::-webkit-slider-runnable-track {
+    background-color: black;
+    height: 1px;
+}
+.porcijos input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin-top: -5px;
+}
+.porcijos p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(47, 22, 69);
+}
+#body-div {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+#image-div {
+  background-image: url("img/UNTITLED.svg");
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+}
+#main-div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#main-div > div {
+  max-width: 625px;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+#main-div input {
+  width: 375px;
+  padding: 15px 15px 15px 15px;
+  background: #170e31b8;
+  border: none;
+}
+
+#main-div label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #dedede;
+  opacity: 80%;
+}
+button {
+  width: 256px;
+  height: 53px;
+  padding: 16px 8px 16px 8px;
+  margin-top: 20px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+}
+button:hover {
+  color:#C2C2C2;
+}
+
+#main-div #hide {
+  background-color: #AA020254;
+  display: flex;
+  display: none;
+}
+h2 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37.5px;
+  text-align: left;
+  color: #ffffff;
+}
+
+#hide h2 span {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37.5px;
+  text-align: left;
+  background-color: red;
+  color: #ffffff;
+
+}
+
+#second-window {
+  display: grid;
+  justify-content: center;
+  display: none;
+}
+#second-window img  {
+  padding-left: 60px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="info-wrapper">
+      <h1>Pasirinkite receptą:</h1>
+      <div class="korteles flex">
+        <div class="vidiniai-div">
+          <img src="img/Rectangle 3.png" />
+          <div class="text">
+            <h4>Vištiena su salotom</h4>
+            <p>
+              Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt
+              risus purus faucibus elit ut. Pellentesque montes.
+            </p>
+          </div>
+          <img src="img/Group 5 (1).png" class="active" />
+        </div>
+        <div class="vidiniai-div">
+          <img src="img/Rectangle 3 (1).png" />
+          <div class="text">
+            <h4>Tortas su mėlynėm</h4>
+            <p>
+              Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt
+              risus purus faucibus elit ut. Pellentesque montes.
+            </p>
+          </div>
+          <img src="img/Group 5 (1).png" class="active" />
+        </div>
+        <div class="vidiniai-div">
+          <img src="img/Rectangle 3 (2).png" />
+          <div class="text">
+            <h4>Makaronai su mėsa</h4>
+            <p>
+              Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt
+              risus purus faucibus elit ut. Pellentesque montes.
+            </p>
+          </div>
+          <img src="img/Group 5 (1).png" class="active" />
+        </div>
+      </div>
+    </div>
+    <div class="info-wrapper porcijos">
+      <h1>Kiek porciju gaminsite</h1>
+      <p>1</p>
+      <input type="range" id="slider" min="1" max="15" value="1" />
+    </div>
+    <div class="info-wrapper ingrientai">
+      <h1>Jums reikės šių ingredientų, tokiais kiekiais:</h1>
+      <div id="rezultatai"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

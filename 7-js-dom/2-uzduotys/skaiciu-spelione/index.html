@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="body-div">
+      <div id="image-div"></div>
+
+      <div id="main-div">
+        <div>
+          <div id="hide">
+            <img src="img/FrowningFace.svg" width="150" />
+            <div>
+              <h1>Deja, Neatspėjote!</h1>
+              <h2 id="result">
+                Spėkite <span class="SpanChange1"></span> skaičių.
+              </h2>
+            </div>
+          </div>
+          <h1>Spėkite skaičių tarp 1 ir 100</h1>
+          <input
+            type="text"
+            id="guessField"
+            class="guessField"
+            min="1"
+            max="100"
+            placeholder="pvz., 100"
+          /><br />
+          <label for="number-box">įveskite skaičių nuo 1 iki 100</label><br />
+          <button id="speti">Spėti</button>
+        </div>
+      </div>
+    </div>
+    <div id="second-window">
+      <img src="img/SmilingFaceWithHalo.svg" width="150px" />
+      <h1>Atspėjote !</h1>
+      <h2>Atspėti jums pavyko iš <span class="SpanChange2"></span></h2>
+      <button id="isNaujo">Žaisti iš naujo</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
