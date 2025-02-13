@@ -7,3 +7,30 @@ body > div {
     padding: 2em;
     margin: 5em;
 }
+
+textarea {
+    width: 100%;
+}
+#tryliktas .parametrai {
+    display: flex;
+    margin-bottom: 2em;
+}
+#tryliktas .parametrai .parametras {
+    width: 20%;
+    padding: 5px 10px;
+}
+
+#tryliktas #div-keitimui {
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#keturioliktas textarea {
+    background-color: #ececec;
+    border: 1px solid #bebebe;
+}
