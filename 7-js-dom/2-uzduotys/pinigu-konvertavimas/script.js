@@ -74,7 +74,6 @@ function addDataIntoDropdownShortName(items) {
 addDataIntoDropdownShortName(currencies);
 addDataIntoDropdownName(currencies);
 
-let showResetButton = 
 
 document.querySelector('.calculate').addEventListener('click', () => {
     let currencyFromValue = document.getElementById('input-from-value').value;
@@ -92,37 +91,4 @@ document.querySelector('.calculate').addEventListener('click', () => {
 
     let changingResult = `${currencyFromValue} ${fromName} yra ${changedCurrency} ${toName}`;
     let rateResult = `santykis: 1 ${fromName} = ${currencyRate} ${toName}`;
-});
-
-
-document.getElementById('resetButton').addEventListener('click', () => {
-
-    document.getElementById('input-from-value').value = '';
-
-
-    document.getElementById('resetButton').style.display = 'none';
-});
-
-document.querySelector('.calculate').addEventListener('click', () => {
-    let currencyFromValue = document.getElementById('input-from-value').value;
-    let fromSelectValue = document.getElementById('select-currency-from').value;
-    let toSelectValue = document.getElementById('select-currency-to').value;
-
-    if (currencyFromValue && fromSelectValue && toSelectValue) {
-        // Rodyti reset mygtuką
-        document.getElementById('resetButton').style.display = '!none';
-    }
-
-    // Likusi konversijos logika...
-    let kursas = gautiKursą(valiutos, fromSelectValue, toSelectValue);
-
-    if (kursas !== null && !isNaN(currencyFromValue)) {
-        let konvertuotaSuma = currencyFromValue * kursas;
-        document.getElementById('result').innerHTML = `
-            Kursas: 1 ${fromSelectValue.toUpperCase()} = ${kursas} ${toSelectValue.toUpperCase()} <br>
-            Konvertuota suma: ${currencyFromValue} ${fromSelectValue.toUpperCase()} = ${konvertuotaSuma.toFixed(2)} ${toSelectValue.toUpperCase()}
-        `;
-    } else {
-        document.getElementById('result').textContent = "Klaida: nepavyko apskaičiuoti kurso arba įvesta neteisinga suma.";
-    }
 });
