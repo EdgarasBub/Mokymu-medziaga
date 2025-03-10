@@ -15,4 +15,15 @@ body {
 
 .cards-list .card {
     height: 100%;
+    
+}
+.no-pets-found {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ff0000; /* Raudona spalva */
+    margin-top: 20px;
+}
+.card-text img {
+    width: 100px;
+    height: 100px;
 }
