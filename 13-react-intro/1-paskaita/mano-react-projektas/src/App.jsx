@@ -1,17 +1,20 @@
-import Header from './components/Header';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+// import Header from './components/Header';
+// import MainContent from './components/MainContent';
+// import Footer from './components/Footer';
 import './App.css';
-import Card from './components/Card';
+// import Card from './components/Card';
+import VartotojoProfilis from './Profilio1Components/VartotojoProfilis';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {<VartotojoProfilis vardas="Jonas" amzius={30} spalva="blue" />}
+      {<VartotojoProfilis vardas="Laura" amzius={25} spalva="red" />}
+      {/* <Header />
       <MainContent />
-      <Card title="Knyga" description="Knygos aprašymas" />
-      <Card > Kates smakes </Card>
-      <Footer />
+      <Card title="Knyga" />
+      <Card title={"kortele su vaiku"}> Kates smakes </Card>
+      <Footer /> */}
     </div>
   );
 }
