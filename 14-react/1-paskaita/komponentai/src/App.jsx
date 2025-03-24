@@ -1,5 +1,5 @@
 import './App.css'
-import Footer from './components/Footer/Footer'
+import ArticleVienas from './components/Articles/ArticleVienas'
 import About from './Pages/About'
 
 
@@ -9,6 +9,7 @@ const App = () => {
     <>
       <About />
       <Footer />
+      <ArticleVienas />
     </>
   )
 }
