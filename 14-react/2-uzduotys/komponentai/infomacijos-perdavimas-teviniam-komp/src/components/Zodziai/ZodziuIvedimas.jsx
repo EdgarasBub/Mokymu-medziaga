@@ -5,7 +5,11 @@ const ZodziuIvedimas = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.pridetiZodi(inputRef.value);
+    const inputValue = inputRef.current.value.trim();
+    if (inputValue !== "") {
+      props.pridetiZodi(inputValue);
+      inputRef.current.value = ""; // Clear the input field after submission
+    }
   };
   return (
     <>
