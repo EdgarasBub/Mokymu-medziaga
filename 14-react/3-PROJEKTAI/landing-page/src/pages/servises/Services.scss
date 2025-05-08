@@ -1,0 +1,39 @@
+.services {
+  background: #5ca9fb;
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px;
+  &_title {
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-weight: 800;
+    font-size: 36px;
+    color: #fdfdfd;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  &_title::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    height: 5px;
+    width: 250px;
+    bottom: 0;
+    left: 40%;
+    color: #fdfdfd;
+  }
+  .description {
+    font-size: 18px;
+    color: #fdfdfd;
+    margin-bottom: 50px;
+  }
+  .itemDetail {
+    color: #fdfdfd;
+  }
+  .ServiceItems {
+    color: #fdfdfd;
+    padding: 20px;
+    width: 33%;
+  }
+}

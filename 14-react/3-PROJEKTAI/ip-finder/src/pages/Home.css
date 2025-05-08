@@ -1,0 +1,19 @@
+.ip-info {
+  background-color: forestgreen;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+
+.mapContainer {
+  width: 500px;
+  height: 350px;
+  border-radius: 40px;
+}
+.mapboxgl-map {
+  border-radius: 40px;
+}
+AiFillFrown {
+  color: red;
+  font-size: 50px;
+  margin-top: 20px;
+}

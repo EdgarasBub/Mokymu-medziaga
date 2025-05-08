@@ -1,0 +1,17 @@
+.clients {
+  background: rgb(196, 188, 188);
+  text-align: center;
+  &__title {
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 36px;
+    color: black;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  &__img-block {
+    padding: 20px;
+  }
+}

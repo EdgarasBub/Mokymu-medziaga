@@ -1,0 +1,267 @@
+{
+    "navigation": {
+        "title": "React landing page",
+        "navigationItems": [
+            "features",
+            "about",
+            "services",
+            "gallery",
+            "testimonials",
+            "team",
+            "contact"
+        ]
+    },
+    "header": {
+        "title": "we are a landing page",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
+        "button": "learn more"
+    },
+    "features": {
+        "title": "features",
+        "featuresItems": [
+            {
+                "icon": "HiChatAlt2",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiVolumeUp",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiOutlineUserGroup",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiPencil",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            }
+        ]
+    },
+    "about": {
+        "title": "about us",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
+        "whyCouseUsTitle": "why choose us",
+        "whyCouseUsItems": [
+            "why choose us",
+            "why choose us",
+            "why choose us",
+            "why choose us",
+            "why choose us",
+            "why choose us",
+            "why choose us",
+            "why choose us"
+        ]
+    },
+    "services": {
+        "title": "our services",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
+        "serviceItems": [
+            {
+                "icon": "HiOutlineDesktopComputer",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiVolumeUp",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiBell",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiClock",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiChatAlt2",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "icon": "HiChip",
+                "title": "lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            }
+        ]
+    },
+    "gallery": {
+        "title": "gallery",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
+        "galleryItems": [
+            {
+                "id": 1,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 2,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 3,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 4,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 5,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 6,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 7,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 8,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 9,
+                "title": "example",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            }
+        ]
+    },
+    "clients": {
+        "title": "what our clients say",
+        "clientsItems": [
+            {
+                "id":1,
+                "icon": "HiChatAlt2",
+                "author": "-lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "id":2,
+
+                "icon": "HiVolumeUp",
+                "author": "-lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "id":3,
+
+                "icon": "HiOutlineUserGroup",
+                "author": "-lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "id":4,
+
+                "icon": "HiPencil",
+                "author": "-lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "id":5,
+
+                "icon": "HiPencil",
+                "author": "-lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            },
+            {
+                "id":6,
+
+                "icon": "HiPencil",
+                "author": "-lorem ipsum",
+                "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            }
+        ]
+    },
+    "team": {
+        "title": "meet the team",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
+        "teamItems": [
+            {
+                "id": 1,
+                "name": "Vandamas",
+                "role": "director",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 2,
+                "name": "Jackie Chanas",
+                "role": "Senior designer",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 3,
+                "name": "Angelina Jolie",
+                "role": "Senior designer",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            },
+            {
+                "id": 4,
+                "name": "Brad Pitt",
+                "role": "Project manager",
+                "image": "https://images.delfi.lt/media-api-image-cropper/v1/1e7e6c4a-2a97-4553-9710-2f42656a2c6a.jpg?noup&w=1264&h=711&ch=0.8437&cw=1&cx=0&cy=0.1563&r=16:9"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Get in touch",
+        "description":"Please fill out form below to send us an email and we will get back to you as soon as possible",
+        "contactInfoTitle": "Contact Info",
+        "contactInfoItems": [
+            {   
+                "icon": "add icon",
+                "property":"Address",
+                "value":"4321 California St, San Francisco, CA 12345"
+            },
+            {
+                "icon": "add icon",
+                "property":"Phone",
+                "value":"+1 123 456 1234"
+            },
+            {
+                "icon": "add icon",
+                "property": "Email",
+                "value": "info@company.com"
+            }
+        ],
+        "form": [
+            {
+                "type": "input",
+                "name": "name"
+            },
+            {
+                "type": "input",
+                "name": "Email"
+            },
+            {
+                "type": "textarea",
+                "name": "message"
+            },
+            {
+                "type": "button",
+                "name": "send message"
+            }
+        ],
+        "socialIcons": [
+            "add social icon",
+            "add social icon",
+            "add social icon"
+        ]
+    }
+}
