@@ -4,7 +4,7 @@ import ItemDetails from "./ItemDetails2";
 
 const Clients = ({ title, description, clientsItems }) => {
   return (
-    <div className="clients">
+    <div className="clients" id="testimonials">
       <Container>
         <h1 className="clients__title">
           <strong>{title}</strong>

@@ -5,7 +5,7 @@ import ItemDetails from "../../components/itemDetails/ItemDetails";
 
 const Services = ({ title, description, serviceItems }) => {
   return (
-    <Container className="services">
+    <Container id="services">
       <Row>
         <Col>
           <h1 className="services_title">

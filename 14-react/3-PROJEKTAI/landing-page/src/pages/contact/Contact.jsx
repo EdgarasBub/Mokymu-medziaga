@@ -1,45 +1,93 @@
-import { Row, Container, Col,Form } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.scss";
+import * as SlIcons from "react-icons/sl";
+import * as FaIcons from "react-icons/fa";
 
-const Contact = ({ title, description, contactInfoTitle, form, socialIcons, contactInfoItems }) => {
-return (
-    <div className="contacts">
-        <Container className="contact__title">
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <Row>
-                <Col md={8}>
-                {
-                    form.map(item => (
-                        <div>
-                            <div >
-                                { item.type === 'input' && <input placeholder={item.name}/>}
-                                { item.type === 'textarea' && <textarea placeholder={item.name}/>}
-                            </div>
-                            <div>
-                                { item.type === 'button' && <button>{item.name}</button>}
-                            </div>
-                        </div>
-                    ))
-                }
-                </Col>
-                <Col md={4} className="contacts__adress">
-                    <h3>{contactInfoTitle}</h3>
-                    {
-                        contactInfoItems.map(item => (
-                            <div>
-                            {item.property}
-                            {item.value}
-                            
-                            </div>
-                        ))
+const Contacts = ({ contactInfo, title, description, form, contactIcons }) => {
+  return (
+    <div id="contact" className="contacts-container">
+      <Container fluid>
+        <Col sm={12}>
+          <Row>
+            <Col className="contacts-container-first-container" sm={8}>
+              <Col className="contacts-container-title" sm={12}>
+                <h2>{title}</h2>
+                <p>{description}</p>
+              </Col>
+              <Form className="contacts-form-container">
+                <Row>
+                  {form.map((item, index) => {
+                    if (item.type === "input") {
+                      return (
+                        <Col sm={5} key={index}>
+                          <Form.Control
+                            placeholder={item.text}
+                            aria-label="Input"
+                            aria-describedby="basic-addon1"
+                          />
+                        </Col>
+                      );
                     }
-                </Col>
-            </Row>
-        
-        </Container>
 
+                    if (item.type === "textarea") {
+                      return (
+                        <Col
+                          className="contacts-form-container-textarea"
+                          sm={10}
+                          key={index}
+                        >
+                          <Form.Control
+                            as="textarea"
+                            rows={5}
+                            placeholder={item.text}
+                          />
+                        </Col>
+                      );
+                    }
+
+                    if (item.type === "button") {
+                      return (
+                        <Col sm={12} key={index}>
+                          <Button variant="primary" className="contacts-button">
+                            {item.text}
+                          </Button>
+                        </Col>
+                      );
+                    }
+                  })}
+                </Row>
+              </Form>
+            </Col>
+            <Col className="contacts-container-second-container" sm={2}>
+              <h3>Contact Info</h3>
+              {contactInfo.map((info, index) => {
+                const ContactIcon = SlIcons[info.icon];
+                return (
+                  <div key={index}>
+                    <div className="icons">
+                      {<ContactIcon />}
+                      <h5>{info.property}</h5>
+                    </div>
+                    <p>{info.value}</p>
+                  </div>
+                );
+              })}
+            </Col>
+          </Row>
+        </Col>
+      </Container>
+      <p className="bottom-line"></p>
+      <div className="bottom-icons">
+        {contactIcons.map((icons, index) => {
+          const Icons = FaIcons[icons.icon];
+
+          return <Icons key={index} />;
+        })}
+      </div>
     </div>
-)
+  );
 };
-export default Contact;
+
+export default Contacts;

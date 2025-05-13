@@ -3,7 +3,7 @@ import "./Team.scss";
 
 const Team = ({ title, description, teamItems }) => {
   return (
-    <div className="team">
+    <div id="team" className="team">
       <Container>
         <h1 className="team__title">{title}</h1>
         <p className="team__description"> {description}</p>

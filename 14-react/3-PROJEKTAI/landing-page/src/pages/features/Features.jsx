@@ -4,7 +4,7 @@ import ItemDetails from "../../components/itemDetails/ItemDetails";
 
 const Features = ({ title, featuresItems }) => {
   return (
-    <div className="features">
+    <div id="features">
       <Container>
         <h1 className="features__title">{title}</h1>
         <Row>

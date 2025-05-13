@@ -3,7 +3,7 @@ import "./Gallery.scss";
 
 const Gallery = ({ title, description, galleryItems }) => {
   return (
-    <div className="gallery">
+    <div className="gallery" id="gallery">
       <Container>
         <h1 className="gallery__title">
           <strong>{title}</strong>

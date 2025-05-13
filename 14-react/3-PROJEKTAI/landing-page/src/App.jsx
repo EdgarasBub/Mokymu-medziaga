@@ -63,13 +63,12 @@ function App() {
             teamItems={landingPageData.team.teamItems}
           />
           <Contact
-            title={landingPageData.contact.title}
-            description={landingPageData.contact.description}
-            contactInfoTitle={landingPageData.contact.contactInfoTitle}
-            form={landingPageData.contact.form}
-            socialIcons={landingPageData.contact.socialIcons}
-            contactInfoItems={landingPageData.contact.contactInfoItems}
-          />
+            title={landingPageData.contacts.title}
+            description={landingPageData.contacts.description}
+            contactInfo={landingPageData.contacts.contactInfo}
+            form={landingPageData.contacts.form}
+            contactIcons={landingPageData.contacts.contactIcons}
+          />    
         </>
       )}
     </>

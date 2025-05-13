@@ -5,7 +5,7 @@ import { Row, Container, Col } from "react-bootstrap";
 
 const About = ({ title, description, whyCouseUsTitle, whyCouseUsItems }) => {
   return (
-    <Container className="about">
+    <Container id="about">
       <Row>
         <Col>
           <img src={img} />
