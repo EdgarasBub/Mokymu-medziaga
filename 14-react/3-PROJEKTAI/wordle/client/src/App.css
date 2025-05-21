@@ -1,0 +1,142 @@
+body  {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.row > div {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;;
+}
+
+.row > div.green {
+    background-color: rgb(18, 181, 18);
+    border-color: green;
+}
+
+.row > div.yellow {
+    background-color: rgb(251, 255, 0);
+    border-color: yellow;
+}
+
+.row > div.grey {
+    background-color: rgb(155, 155, 155);
+    border-color: grey;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotate(0);
+        background-color: #fff;
+        border-color: #333;
+    }
+    45% {
+        transform: rotate(90deg);
+        background-color: #fff;
+        border-color: #333;
+    }
+
+    55% {
+        transform: rotate(90deg);
+        background-color: var(--background-color);
+        border-color: var(--border-color);
+        color:#eee;
+    }
+
+    100% {
+        transform: rotate(0d);
+        background-color: var(--background-color);
+        border-color: var(--border-color);
+        color: #eee;
+    }
+}
+.row > div.green, .row > div.yellow, .row > div.grey {
+    animation: flip 0.5s ease forwards;
+}
+
+.row > div.green {
+    --background-color: rgb(18, 181, 18);
+    --border-color: green;
+}
+
+.row > div.yellow {
+    --background-color: rgb(251, 255, 0);
+    --border-color: yellow;
+}
+
+.row > div.grey {
+    --background-color: rgb(155, 155, 155);
+    --border-color: grey;
+}
+
+.row > div:nth-child(2) { animation-delay: 0.2; }
+.row > div:nth-child(3) { animation-delay: 0.4; }
+.row > div:nth-child(4) { animation-delay: 0.6; }
+.row > div:nth-child(5) { animation-delay: 0.8; }
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+        border-color: #ddd;
+    }
+    50% {
+        transform: scale(1.2);;
+    }
+    100% {
+        transform: scale(1);
+        border-color: #333;
+    }
+}
+
+.row.current > div.filled {
+    animation: bounce 0.2s ease-in-out forwards;
+}
+
+.keypad {
+    max-width: 500px;
+    margin: 20px auto;
+}
+.keypad > div {
+    margin: 5px;
+    width: 40px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #c9c9c9;
+    display: inline-block;
+    border-radius: 6px;
+    line-height: 50px;
+}
+
+.keypad > div.green {
+    background-color: rgb(18, 181, 18);
+}
+
+.keypad > div.yellow {
+    background-color: rgb(251, 255, 0);
+}
+
+.keypad > div.grey {
+    background-color: rgb(155, 155, 155);
+}
+
+.keypad > div.green, .row > div.yellow, .row > div.grey {
+    animation: all 0.3 ease-in;
+    color: #fff;
+}
+.won-title {
+    color: green;
+}
+.lost-title {
+    color: red;
+}
