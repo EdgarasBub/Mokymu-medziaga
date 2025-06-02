@@ -69,6 +69,31 @@
                 }
             ],
             "answerId": 1
+        },
+                {
+            "id": 4,
+            "questions": "kada lietuva tapo nepriklausoma?",
+            "options": [
+                {
+                    "id":1,
+                    "value":"1990"
+                },
+                {
+                    "id":2,
+                    "value":"1991"
+                },
+                {
+                    "id":3,
+                    "value":"1992"
+                },
+                {
+                    "id":4,
+                    "value":"1993"
+                }
+            ],
+            "answerId": 1
         }
+
     ]
+    
 }
