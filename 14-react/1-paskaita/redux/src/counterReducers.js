@@ -1,6 +1,8 @@
 const COUNT_KEY = 'count-value'
 
-export const counterReducer = (state = {count:parseInt (localStorage.getItem(COUNT_KEY))}, action) => {
+export const counterReducer = (state = {count:
+    localStorage.getItem(COUNT_KEY) ? parseInt(localStorage.getItem(COUNT_KEY)) : 0
+    }, action) => {
     switch (action.type) {
         case 'INCREMENT' :
             localStorage.setItem(COUNT_KEY, state.count + 1);

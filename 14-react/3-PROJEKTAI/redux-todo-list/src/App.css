@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(112, 222, 187);
+}
+
+.todo-list li{
+    text-decoration: underline;
+    margin: 5px;
+    background-color: rgb(247, 247, 247);
+    list-style-type: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.todo-app {
+    justify-content: center;
+    display: grid;
+    margin-top: 100px;
+    padding-bottom: 50px;
+background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.todo-app h1 {
+    justify-content: center;
+    display: flex;
+}
+
+.add-todo-task input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.add-todo-task button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.inactive {
+    background-color: aliceblue;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.active  {
+    background-color: aquamarine;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
