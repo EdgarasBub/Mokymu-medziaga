@@ -1,0 +1,36 @@
+
+<%- include('./layout/header.ejs') %>
+<%- include('./layout/nav.ejs') %>
+    <div id="receptas-list-content">
+        <h1>receptas listas</h1>
+        <h3>siuo metu yra: <%= receptai.length %> receptu</h3>
+        <table border="1">
+            <tr><th>title</th><th>level</th><th>description</th><th>price</th><th>actions</th></tr>
+            <% receptai.forEach(item => { %>
+                <tr>
+                    <!-- <td><%= item._id %></td> -->
+                    <td><%= item.title %></td>
+                    <td><%= item.level %></td>
+                    <td><%= item.description %></td>
+                    <td><%= item.price %></td>
+                    <td>
+                        <a href="/edit/<%= item._id %>" ><button>edit</button></a>
+                           <button onclick="onDeleteClick('<%= item._id %>')">delete</button>                    </td>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+<%- include('./layout/footer.ejs') %>
+
+<script>
+
+    function onDeleteClick(id) {
+        const endpoint = `/receptai/list/${id}`;
+
+        fetch(endpoint, {method: 'DELETE'})
+            .then(response => response.json())
+            .then(data => window.location.href = data)
+            .then(error => console.log(error))
+    }
+
+</script>
