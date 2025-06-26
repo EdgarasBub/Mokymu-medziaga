@@ -4,7 +4,9 @@ const app = express();
 const PORT = 3000
 const dbURI = 'mongodb+srv://codingSchoolEdgaras:Mikadzius123@cluster0.dj0iv4k.mongodb.net/codingSchoolReceptai'
 const receptasRoutes = require('./routes/receptasRoutes')
+const methodOverride = require('method-override');
 
+app.use(methodOverride('_method'))
 
 mongoose.connect(dbURI)
     .then(() => app.listen(PORT))

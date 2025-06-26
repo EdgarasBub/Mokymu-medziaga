@@ -27,10 +27,22 @@ const receptas_create_get = (req, res) => {
     res.render('create');
 }
 const receptas_edit_get = (req, res) => {
+    const id = req.params.id;
 
+    Receptas.findById(id)
+        .then(result => 
+            // {console.log( result);
+            res.render('edit', { receptas: result}) )
+        .catch((e) => console.log(e))
+        
 }
 const receptas_edit_put = (req, res) => {
-    
+    const {title,description,level,price} = new Receptas (req.body);
+    const id = req.params.id
+
+    Receptas.findByIdAndUpdate (id, {title,description,level,price})
+        .then(() => res.json('/receptai/list'))
+        .catch(e => console.log(e));
 }
 
 
