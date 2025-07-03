@@ -7,3 +7,19 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <nav class="top-nav">
+    <ul>
+      // +
+      <% if (user) { %>
+        <li>Welcome, <%= user.email %></li>
+      <li><a href="/">Pagrindinis</a></li>
+      <li><a href="/randomListas">Random Listas</a></li>
+            <li><a href="/logout">Log out</a></li>
+        <% } else { %>
+          // -
+      <li><a href="/login">Login</a></li>
+      <li><a href="/signup">Sign Up</a></li>
+      <% } %>
+    </ul>
+  </nav>
+</body>

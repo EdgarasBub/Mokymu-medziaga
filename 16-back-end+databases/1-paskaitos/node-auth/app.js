@@ -4,6 +4,7 @@ const app = express();
 
 const dbUrl = 'mongodb+srv://codingSchoolEdgaras:Mikadzius123@cluster0.dj0iv4k.mongodb.net/sample_mflix';
 const authRoutes = require('./routes/authRoutes');
+const {requireAuth, checkUser} = require('./middleware/authMiddleware')
 
 mongoose.connect(dbUrl)
     .then(() => {
@@ -16,5 +17,23 @@ app.use(express.json());
 app.use(express.static('public'))
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => res.render('home'))
+const cookieParser = require('cookie-parser')
+app.use(cookieParser())
+
+
+app.get(/(.*)/, checkUser)
+app.get('/', requireAuth, (req, res) => res.render('home'))
+app.get('/randomlistas', requireAuth, (req, res) => res.render('listas'));
 app.use(authRoutes);
+
+// app.get('./set-cookies', (req,res) => {
+//     res.cookie('newCookie', false);
+//     res.cookie('isStudent',true, {maxAge: 1000 * 60 * 60 * 24, secure: true })
+//     res.send('cookies yra issaugotas')
+// })
+
+// app.get('/red-cookies', (req, res) => {
+//     const cookies = req.cookies;
+
+//     res.json(cookies)
+// })

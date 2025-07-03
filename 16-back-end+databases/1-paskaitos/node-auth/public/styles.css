@@ -1,3 +1,113 @@
-body{
-    color: blue;
+/* Bendrai visai formai ir fonui */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Kortelės forma */
+form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Antraštė */
+form h2 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Etiketės */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Įvesties laukeliai */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Klaidos žinutės */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -0.8rem;
+  margin-bottom: 1rem;
+  min-height: 1rem;
+}
+
+/* Mygtukas */
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #ffe066;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd43b;
+}
+/* Navigacija viršuje */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Išdėstymas horizontalus, be taškų */
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nuorodų stilius */
+.top-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Užvedus pelę */
+.top-nav ul li a:hover {
+  color: #ffe066;
+}
+
+/* Kai reikia "atskirti" turinį žemiau nav */
+body {
+  padding-top: 70px; /* tiek, kiek nav aukštis */
 }
