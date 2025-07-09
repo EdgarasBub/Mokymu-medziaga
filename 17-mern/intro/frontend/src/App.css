@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f1f1f1;
+  background: #f5f1f1;
   margin: 0;
   font-family: "Poppins";
 }
@@ -33,4 +33,54 @@ header a {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+}
+
+.tasksTable {
+    border: 1px solid #f0d2d2;
+    background-color: aliceblue;
+  }
+
+.tasksTable a {
+  cursor: pointer;
+}
+
+
+.taskCreateContainer form {
+  text-align: right;
+    width: 30%;
+}
+
+.errorMsg {
+  color:red;
+}
+
+.toastPosition {
+  top: 20px;
+  right: 20px;
+  position: fixed;
+}
+
+.NavBars {
+  background-color: #bfb1b6;
+  --bs-nav-link-color: black !important;
+}
+
+.taskCreateContainer {
+  gap: 5px;
+  padding: 5px;
+}
+.taskCreateContainer input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.taskCreateContainer label {
+  text-transform: uppercase;
+}
+.taskCreateContainer button {
+  padding: 22px;
+  border-radius: 40px;
+  background-color: #bfb1b6;
+  text-decoration: solid;
+
 }

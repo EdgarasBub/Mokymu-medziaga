@@ -1,17 +1,18 @@
 import {Link} from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 
 const Navbar = () => {
     return (
-        <header>
+        <Nav variant='underline' className='NavBars' >
             <div className='container'>
-                <Link to='/'>
+                <Nav.Link href='/'>
                     <h1>Mano Pratimai</h1>
-                </Link>
-                <Link to='/newPratimas'>
+                </Nav.Link>
+                <Nav.Link href='/newPratimas'>
                     <h1>Sukurti nauja pratima</h1>
-                </Link>
+                </Nav.Link>
             </div>
-        </header>
+        </Nav>
     )
 };
 
