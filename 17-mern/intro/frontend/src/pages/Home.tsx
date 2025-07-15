@@ -1,21 +1,35 @@
-import { useEffect, useState, type SyntheticEvent } from "react";
+import { useContext, useEffect, useState, type SyntheticEvent } from "react";
 import type { Task } from "../utils/types";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Toast from 'react-bootstrap/Toast';
+import { AuthContext } from "../context/AuthContext";
 
 const Home = () => {
     const [pratimai, setPratimai] = useState<Task[]>([]);
     const [pratimoDetails, setPratimoDetails] = useState<any>();
     const [editEnabled, setEditEnabled] = useState<boolean>(false);
+    const [toast, setToast] = useState({
+        body: '',
+        header: '',
+        type: 'success',
+        show: false
+    });
+    const [deleteEnabled, setDeleteEnabled] = useState<boolean>(false);
+    const user = JSON.parse(localStorage.getItem('user'));
 
     useEffect(() => {
-       
+        console.log('++++')
+        console.log(user)
         getPratimai();
     }, []);
 
     const getPratimai = async () => {
-        const response = await fetch('http://localhost:4000/api/pratimai');
+        const response = await fetch('http://localhost:4000/api/pratimai', {
+            headers: {
+                'Authorization': `Bearer ${user.token}`
+            }
+        });
         const json = await response.json();
 
         if (response.ok) {
@@ -25,25 +39,35 @@ const Home = () => {
     }
 
     const [show, setShow] = useState(false);
-    const [showToast, setShowToast] = useState(false);
-    const [error, setError] = useState('');
+    // const [showToast, setShowToast] = useState(false);
+    // const [error, setError] = useState('');
 
-    const [confirmDelete, setConfirmDelete] = useState(false);
+ 
 
-    const handleClose = () => {
-        setShow(false)
+    const handleClose = () => {  
+        setShow(false) 
         setEditEnabled(false);
-        setConfirmDelete(false);
+        setDeleteEnabled(false);
     };
     const handleShow = () => setShow(true);
 
     const openDetails = async (id: string) => {
-        const response = await fetch('http://localhost:4000/api/pratimai/' + id );
+        const response = await fetch('http://localhost:4000/api/pratimai/' + id , {
+            headers: {
+                'Authorization': `Bearer ${user.token}`
+            }
+        });
         const pratimasDetails = await response.json();
 
         if (pratimasDetails.error) {
-            setError(pratimasDetails.error);
-            setShowToast(true);
+            // setError(pratimasDetails.error);
+            // setShowToast(true);
+            setToast({
+                body: pratimasDetails.error,
+                header: 'Ivyko klaida, bandant gauti pratimo informacija',
+                type: 'danger',
+                show: true
+            });
 
             return;
         }
@@ -54,46 +78,120 @@ const Home = () => {
         }
     }
 
-    const onDeleteTaskClick = async (id: string) => {
-        console.log(id);
-        const response = await fetch('http://localhost:4000/api/pratimai/' + id, {method: 'DELETE'} );
+    const deleteTask = async (id: string) => {
+        const response = await fetch('http://localhost:4000/api/pratimai/' + id, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${user.token}`
+            }
+        } );
         const responseDetails = await response.json();
-        console.log(responseDetails)
+        
+        if (responseDetails.error) {
+            setToast({
+                body: responseDetails.error,
+                header: 'Ivyko klaida, bandant istrinti pratima',
+                type: 'danger',
+                show: true
+            });
 
-        setShow(false);
-        getPratimai();
+            setDeleteEnabled(false);
+            return;
+        }
+
+        if (response.ok) {
+            setToast({
+                body: 'istrintas ' + pratimoDetails.title + ' pratimas',
+                header: 'Sekmingai ivykdytas trinimas',
+                type: 'success',
+                show: true
+            });
+
+            getPratimai();
+            setShow(false);
+            setDeleteEnabled(false);
+        }
+    
     }
 
+    const onDeleteTaskClick = () => setDeleteEnabled(true);
     const onUpdateTaskClick = () => setEditEnabled(prev => !prev);
 
     const onInputChangeEvent = (e: SyntheticEvent) => {
-        console.log(e)
+        console.log(e);
         console.log(pratimoDetails);
     }
+
+    // 0. paleisti appsa
+    // 1. paspaudus istrinti
+    //     vietoje action mygtuku - atsiras - 
+    //         yes ir no mygtukai
+    //             yes raudonas
+    //             no melynas
+    // 2. paspaudus no, action mygtuukai i pradine busena
+    // 3. paspaudus yes, 
+    //      3.1  sekmes atveju 
+    //         uzdarom modal langa
+    //         atnaujinam pratimu lista 
+    //         zalias pranesimas
+    //             success message
+    //     3.2  klaidos atveju
+    //         raudonas pranesimas 
+    //             error message
+    //         liekam tam paciame modal lange,action mygtukai i pradine busena
 
     const updateTaskOnSaveButtonClick = async () => {
         console.log(pratimoDetails)
         const response = await fetch(
-            'http://localhost:4000/api/pratimai/' + pratimoDetails._id, 
-            {method: 'PATCH',
+            'http://localhost:4000/api/pratimai/' + pratimoDetails._id,
+            {method: 'PATCH', 
                 body: JSON.stringify({
                     title: pratimoDetails.title,
                     reps: pratimoDetails.reps,
                     level: pratimoDetails.level
                 }),
-                headers: {'Content-Type': 'application/json'}
-            })
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${user.token}`
+                }
+            }
+        );
         const responseDetails = await response.json();
-        
-        console.log(responseDetails)
-    }
 
+        console.log(responseDetails);
+
+        if (responseDetails.error) {
+            // setError(responseDetails.error);
+            // setShowToast(true);  
+
+            setToast({
+                body: responseDetails.error,
+                header: 'Ivyko klaida, bandant atnaujinti pratimo informacija',
+                type: 'danger',
+                show: true
+            });
+
+            return;
+        }
+
+        if (response.ok) {
+            setToast({
+                body: 'atnaujinas ' + pratimoDetails.title + ' pratimas',
+                header: 'Sekmingai ivykdytas atnaujinimas',
+                type: 'success',
+                show: true
+            });
+
+            getPratimai();
+            setShow(false);   
+        }
+    }
 
     return (
         <>
             <h1>Mano pratimai</h1>
             {   pratimai.length > 0 && (
-                <table className="tasksTable">
+                 <table className="tasksTable">
                     <thead>
                         <tr>
                             <th>Pavadinimas</th>
@@ -118,123 +216,115 @@ const Home = () => {
 
             <Toast 
                 className="toastPosition"
-                bg="danger" onClose={() => setShowToast(false)}
-                show={showToast} 
+                bg={toast.type} onClose={() => setToast( { 
+                    show: false,
+                    body: '',
+                    header: '',
+                    type: ''
+                 })}
+                show={toast.show}  
                 delay={2000} 
                 autohide
             >
                 <Toast.Header>
-                    Ivyko klaida, bandant gauti pratimo informacija
+                    {toast.header}
                 </Toast.Header>
                 <Toast.Body>
-                    <strong>{error}</strong>
+                    <strong>{toast.body}</strong>
                 </Toast.Body>
             </Toast>
 
             <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
-                <Modal.Title>
-                    {
-                        editEnabled
-                        ? "Atnaujinti pratimo informacija"
-                        : "Pratimo detali informacija"}
+                <Modal.Title>  
+                    { editEnabled && "Atnaujinti pratimo informacija" }
+                    { deleteEnabled && 'Ar tikrai norite istrinti si pratima?'}
+                    { !editEnabled && !deleteEnabled && "Pratimo detali informacija"}
                 </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    {
-                        editEnabled &&
+                    { editEnabled && 
                         <>
                             <form style={{textAlign: "right"}}>
-                                <label htmlFor="title"> Pavadinimas:</label>
-                                <input
-                                    onChange={event => setPratimoDetails({
-                                        level: pratimoDetails.level,
+                                <label htmlFor="title">Pavadinimas:</label>
+                                <input  
+                                    onChange={event => setPratimoDetails( {
+                                        level:  pratimoDetails.level,
                                         title: event.target.value,
                                         reps: pratimoDetails.reps,
                                         _id: pratimoDetails._id
-                                    } ) }
-                                type="text" name="level"  defaultValue={pratimoDetails?.title}/>
-                                
-                                <br />
+                                    } ) } 
+                                    type="text" name="title" defaultValue={pratimoDetails?.title}/>
 
-                                <label htmlFor="reps"> Pratimo pasikartojimai:</label>
-                                <input
-                                    onChange={event => setPratimoDetails({
-                                        level: pratimoDetails.level,
+                                <br/>
+
+                                <label htmlFor="reps">Pratimo pasikartojimai:</label>
+                                <input 
+                                    onChange={event => setPratimoDetails( {
+                                        level:  pratimoDetails.level,
                                         title: pratimoDetails.title,
                                         reps: parseInt(event.target.value),
                                         _id: pratimoDetails._id
-                                    } ) }
-                                type="number" name="reps"  defaultValue={pratimoDetails?.reps}/>
+                                    } ) } 
+                                    type="number" name="reps" defaultValue={pratimoDetails?.reps}/>
+                                <br/>
 
-                                <br />
-
-                                <label htmlFor="level"> Lygis:</label>
-                                <input
-                                    onChange={event => setPratimoDetails({
+                                <label htmlFor="level">Lygis:</label>
+                                <input 
+                                    onChange={event => setPratimoDetails( {
                                         level: parseInt(event.target.value),
                                         title: pratimoDetails.title,
                                         reps: pratimoDetails.reps,
                                         _id: pratimoDetails._id
-                                    } ) }
-                                    type="number" name="level"  defaultValue={pratimoDetails?.level}/>
-
-                                <br />
-
+                                    } ) } 
+                                    type="number" name="level" defaultValue={pratimoDetails?.level}/>
+                                <br/>
                             </form>
                         </>
                     }
                     {
-                        !editEnabled &&
-                        <>
-                            <p>pavadinimas: {pratimoDetails?.title}</p>
-                            <p>pasikarotimai: {pratimoDetails?.reps}</p>
-                            <p>lygis: {pratimoDetails?.level}</p>
-                        </>
+                        !editEnabled && 
+                            <>
+                                <p>pavadinimas: {pratimoDetails?.title}</p>
+                                <p>pasikarotimai: {pratimoDetails?.reps}</p>
+                                <p>lygis: {pratimoDetails?.level}</p>
+                            </>
                     }
-
-
                 </Modal.Body>
                 <Modal.Footer>
                     {editEnabled && (
                         <>
                             <Button variant="success" onClick={updateTaskOnSaveButtonClick}>
                                 Issaugoti
-                            </Button>  
+                            </Button>
                             <Button variant="primary" onClick={() => setEditEnabled(false)}>
                                 Atsaukti
-                            </Button>  
+                            </Button>
                         </>
                     )}
-                    {!editEnabled && (
+                    {!editEnabled && !deleteEnabled &&
                         <>
                             <Button variant="warning" onClick={() => onUpdateTaskClick()}>
                                 Atnaujinti
+                            </Button>        
+                            <Button variant="danger" onClick={() => onDeleteTaskClick()}>
+                                Istrinti
                             </Button>
-                            {
-                                !confirmDelete && 
-                                    <Button variant="danger" onClick={() => setConfirmDelete(true)}>
-                                        Istrinti
-                                    </Button>
-                            }
-                            {
-                                confirmDelete && 
-                                <>
-                                    <Button variant="outline-danger" onClick={() => onDeleteTaskClick(pratimoDetails?._id)}>
-                                        YES
-                                    </Button>
-                                    <Button variant="outline-primare" onClick={() => setConfirmDelete(false)}>
-                                        NO
-                                    </Button>
-                                </>
-                            }
+                          
+                        </>
+                    }
 
-
+                    {deleteEnabled && (
+                        <>
+                            <Button variant="danger" onClick={ () => deleteTask(pratimoDetails._id)}>Taip</Button>
+                            <Button onClick={() => setDeleteEnabled(false)}>Ne</Button>
                         </>
                     )}
+
                     <Button variant="secondary" onClick={handleClose}>
                         Uzdaryti
                     </Button>
+          
         
                 </Modal.Footer>
             </Modal>
