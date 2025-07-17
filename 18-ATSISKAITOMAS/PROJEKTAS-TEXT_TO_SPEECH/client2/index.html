@@ -1,39 +1,13 @@
-<!-- client/index.html -->
-<!DOCTYPE html>
-<html lang="lt">
-<head>
-  <meta charset="UTF-8" />
-  <title>Text to Speech App</title>
-  <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
-    textarea { width: 100%; height: 100px; font-size: 1rem; }
-    button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 1rem; }
-  </style>
-</head>
-<body>
-  <h1>Text to Speech (TTS)</h1>
-  <textarea id="text" placeholder="Įveskite tekstą..."></textarea>
-  <br />
-  <button onclick="speak()">🔊 Skaityti tekstą</button>
-  <button onclick="save()">💾 Išsaugoti įrašą</button>
-
-  <script>
-    function speak() {
-      const text = document.getElementById('text').value;
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'lt-LT';
-      speechSynthesis.speak(utterance);
-    }
-
-    async function save() {
-      const text = document.getElementById('text').value;
-      await fetch('http://localhost:3000/api/entries', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
-      });
-      alert('Išsaugota į MongoDB!');
-    }
-  </script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
