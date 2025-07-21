@@ -10,9 +10,13 @@ const App: React.FC = () => {
     <main className="bg-gray-100 min-h-screen p-4">
       <BrowserRouter>
             <Navbar />
-      {/* <TextToSpeech /> */}
+            <div className='pages'>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/TextToSpeech' element={<TextToSpeech />} />
+              </Routes>
+            </div>
       </BrowserRouter>
-
       <Home />
     </main>
   );
